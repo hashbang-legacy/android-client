@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+    <CheckBoxPreference
+        android:key="notifications_from_system"
+        android:title="@string/pref_title_allow_from_system"
+        android:defaultValue="true" />
+
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <CheckBoxPreference
+        android:key="notifications_from_admins"
+        android:title="@string/pref_title_allow_from_users"
+        android:defaultValue="true" />
+
+</PreferenceScreen>
